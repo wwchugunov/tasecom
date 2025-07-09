@@ -1,0 +1,575 @@
+/* header < */
+
+.header {
+  width: 100%;
+  background: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.menu-list {
+  display: flex;
+  margin-left: 200px;
+}
+
+.menu-items {
+  margin-right: 40px;
+}
+
+.menu-items:nth-last-child(1) {
+  margin: 0;
+}
+
+.menu-link {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+button.connect {
+  width: 138px;
+  height: 36px;
+  background: #163dfa;
+  border-radius: 8px;
+  color: white;
+  display: block;
+}
+
+button.connect:hover {
+  background: #0f2fcc;
+  box-shadow: 0 0 10px rgba(22, 61, 250, 0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* header  > */
+
+/* obout < */
+.obout {
+  width: 100%;
+  background: black;
+  font-family: "Days One", sans-serif;
+}
+
+.obout__inner .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.obout .title {
+  font-size: 40px;
+  color: white;
+  padding-top: 170px;
+}
+
+.blue {
+  color: #163dfa;
+}
+
+.obout .title .before-text {
+  position: relative;
+  z-index: 0;
+}
+.obout .title .before-text::before {
+  position: absolute;
+  content: "";
+  background: #0f2fcc;
+  width: 170px;
+  height: 29px;
+  z-index: -1;
+  border-radius: 8px;
+  top: 19px;
+  left: 7px;
+}
+
+.obout-los {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  width: 417px;
+  font-weight: 100;
+  margin-top: 22px;
+}
+
+.obout-more {
+  color: #163dfa;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin-left: 30px;
+  top: 19px;
+}
+
+.obout-more::after {
+  position: absolute;
+  content: "";
+  background-image: url(/images/more-after-svg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  left: -30;
+  width: 25px;
+  height: 25px;
+  top: -2px;
+  left: -31px;
+}
+/* obout > */
+
+/* payment-methods < */
+
+.payment-methods {
+  width: 100%;
+  background-image: url("/images/payment-solutions-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  padding-bottom: 200px;
+}
+
+.payment-methods__title {
+  padding-top: 130px;
+  color: white;
+  font-family: "Days One", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.payment-methods__title-after {
+  position: relative;
+  z-index: 0;
+}
+
+.payment-methods__title-after::after {
+  position: absolute;
+  content: "";
+  background: #0f2fcc;
+  width: 170px;
+  height: 29px;
+  z-index: -1;
+  border-radius: 8px;
+  top: 19px;
+  left: 7px;
+}
+
+.payment-methods-slider-box {
+  margin-top: 100px;
+}
+
+.payment-methods-slide {
+  width: 257px;
+  height: 348px;
+  background: #030e2c;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.slick-track {
+  height: 406px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.payment-methods-slide.slick-slide.slick-current.slick-active.slick-center {
+  background: #163dfa;
+  cursor: pointer;
+  width: 277px;
+  height: 406px;
+}
+
+.payment-methods-slide.slick-slide.slick-current.slick-active.slick-center
+  .payment-methods-slide-more-btn {
+  background: #030e2c;
+  color: white;
+  margin-top: 144px;
+  cursor: pointer;
+}
+
+.payment-methods-slide.slick-slide.slick-current.slick-active.slick-center
+  .payment-methods-slide__icon {
+  color: #030e2c;
+}
+
+.payment-methods-slide__icon {
+  color: #163dfa;
+}
+
+.payment-methods-slide-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+.payment-methods-slide-more-btn {
+  width: 144px;
+  height: 39px;
+  background: #163dfa;
+  border-radius: 6px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.payment-methods-slide-more-btn:hover {
+  background: #0f2fcc;
+}
+
+.payment-methods-slider-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.payment-methods-slider-box::before,
+.payment-methods-slider-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 13%;
+  height: 405px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.payment-methods-slider-box::before {
+  height: 347px;
+  bottom: 13px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.722), transparent);
+}
+
+.payment-methods-slider-box::after {
+  height: 347px;
+  bottom: 13px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.734), transparent);
+}
+
+/* payment-methods > */
+
+/* payment-solutions < */
+
+.payment-solutions {
+  width: 100%;
+  background-image: url("/images/payment-methods-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.payment-solutions__inner .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-solutions__title {
+  font-family: "Days One", sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 150px;
+}
+
+.payment-solutions-btn-box {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 25px;
+  row-gap: 25px;
+  align-items: stretch; 
+}
+
+.payment-solutions-btn__item {
+  width: 136px;
+  height: 104px;
+  border: solid #454444 1px;
+  border-radius: 6px;
+  background: #2a2a2b;
+}
+
+.payment-solutions-modal {
+  background-image: url("/images/payments-method-plash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 327px;
+  width: 355px;
+  position: absolute;
+  transition: 1s linear;
+}
+
+.payment-solutions-modal-btn-info img {
+  position: absolute;
+  margin-top: -44px;
+}
+
+.payment-solutions-modal-obout {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin-top: 111px;
+  font-size: 20px;
+  width: 351px;
+  margin-left: 9px;
+}
+
+.payment-solutions-modal-btn-close {
+  position: absolute;
+  margin-right: 27px;
+  margin-left: 355px;
+  margin-top: 12px;
+}
+
+
+
+.payment-solutions-modal {
+  display: none;
+}
+
+
+
+
+
+
+/* payment-solutions > */
+
+
+
+
+
+
+
+/* services < */
+.services {
+  width: 100%;
+  background: black;
+  padding-bottom: 150px;
+}
+
+.services__inner .container {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.services_item {
+  width: 351px;
+  height: 361px;
+  background: #000e32;
+  position: relative;
+  font-family: "Days One", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  padding: 9px;
+  transition: transform 0.3s ease;
+  transform-origin: bottom;
+  overflow: hidden;
+}
+
+.services_item:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.services_item:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.services--decorations-num {
+  text-align: start;
+  color: #163dfa;
+}
+
+.services_item-tite {
+  margin-top: 20px;
+}
+.services-obout-text {
+  margin-top: 46px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.services_item-btn {
+  width: 165px;
+  height: 38px;
+  background: #000e32;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.services_item:hover {
+  background: #163dfa;
+  transform: scaleY(1.2);
+  border-radius: 0;
+}
+
+.services_item:hover .services_item-btn {
+  display: block;
+}
+
+.services_item:hover .services--decorations-num {
+  color: #ffffff;
+}
+
+/* Стили для активного состояния */
+.services_item.active {
+  background: #163dfa; /* Активный фон */
+  transform: scaleY(1.2); /* Увеличение высоты */
+  border-radius: 0; /* Убираем закругления на активном элементе */
+}
+
+.services_item.active .services_item-btn {
+  display: block; /* Кнопка всегда видна для активного элемента */
+}
+
+.services_item.active .services--decorations-num {
+  color: #ffffff; /* Меняем цвет для активного элемента */
+}
+
+/* services  > */
+
+/* product < */
+.product {
+  background: black;
+  height: 100vh;
+}
+
+.slide-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.product-slider-item__obout {
+  width: 691px;
+  height: 83px;
+  background: #414044;
+  border-radius: 60px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: white;
+  padding: 15px;
+  padding-left: 25px;
+}
+
+.slick-prev {
+  display: none;
+}
+
+.slick-next {
+  background-image: url("/images/product-slider-arrow-next.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 54px;
+  height: 55px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slick-next.slick-arrow {
+  background-image: url("/images/product-slider-arrow-next.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 55px;
+}
+
+.slick-next::before {
+  content: none;
+}
+
+.slick-next {
+  text-indent: -9999px;
+}
+
+.slick-next::before {
+  content: "";
+}
+
+.slick-track {
+  height: auto !important;
+  display: flex;
+  align-items: flex-end;
+}
+
+main {
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+
+.slide-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product-slider-item__oboutitem-2{
+    position: relative;
+    color: white;
+}
+
+.product-slider-item__oboutitem-2::after{
+    position: absolute;
+    content: '01';
+    font-size: 40;
+    font-family: "Days One", sans-serif;
+     color: #23252C;
+
+}
+
+
+.product-slider-item-title{
+
+}
+
+
+.product-slider-item-text{
+
+}
+
+
+
+
+/* product > */
